@@ -10,7 +10,7 @@ imagem = cv2.imread("cat2.jpg", cv2.IMREAD_GRAYSCALE)
 imagem = imagem.astype(np.float32) / 255.0
 imagem = np.expand_dims(imagem, axis=(0, -1))  # Shape: (1, altura, largura, 1)
 
-# # 📌 3. Criar um kernel de desfoque(blur) (9x9)
+# EFEITO BLUR (desfoque 9x9)
 kernel_blur = np.ones((9, 9, 1, 1), np.float32) / 81  # Kernel maior
 
 
